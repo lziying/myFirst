@@ -1,0 +1,38 @@
+CREATE DATABASE databasename;创建数据库（一个数据可包含多个table）
+DROP DATABASE databasename;删除数据库
+USE databasename;进入某个数据库
+
+
+创建table(以分号为界）
+CREAT TABLE new_table_name AS
+  SELECT column1,column2,....
+  FROM existing_table_name
+  WHERE...;
+
+删除table
+DROP TABLE table_name;
+
+修改table
+ALTER TABLE table_name  
+ADD column_name_datatype; 加上一列
+ALTER TABLE table_name
+DROP COLUMN column_name;  删除一列
+
+查询table数据
+SELECT * FROM table_name;  全查询
+SELECT column1,column2,...FROM table_name;
+SELECT DISTINCT column1,column2,... FROM table_name;  去重查询
+SELECT column1,column2,.... FROM table_name WHERE condition；  条件查询：查询符合某个condition值的数据
+	condition：条件AND OR NOT
+SELECT column1,column2,... FROM table_name ORDER BY column2,column1,....ASC(升序，默认可不写)/DESE(降序)
+
+给table插入数据
+INSERT INFO table_name (column1,column2,...) VALUES(1,'小明',...);
+
+
+例子：
+CREAT TABLE Customers(
+	CustomerID int,          列名后(header)为该列的数据格式
+	customerName varchar(255)
+);
+
