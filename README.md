@@ -1,2 +1,2 @@
-# myFirst
-This is my first repository.
+# lziying's Notebook
+This is the respository where I store my notes.
