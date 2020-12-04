@@ -1,0 +1,15 @@
+/*标签选择器*/
+
+/*css样式：
+选择器{
+	样式
+}
+*/
+span1{
+	color:green;
+	font-size:20px;
+}
+span{
+	color:pink;
+	font-size:23px;
+}
